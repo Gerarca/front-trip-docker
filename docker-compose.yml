@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3020:80"
+    environment:
+      - VUE_APP_BACKEND_URL=${VUE_APP_SERVER_API}
